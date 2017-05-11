@@ -31,9 +31,18 @@
 								<?php endif; ?>
 
 							<header>
-								<div class="category-meta"><?php the_category(', '); ?></div>
-								<div class="meta"><time datetime="<?php echo the_time('Y-m-d'); ?>"><?php the_time(get_option('date_format')); ?></time><!--, <?php the_author_posts_link(); ?>, <?php comments_popup_link(__('No Comment', 'popster'), '1 Comment', '% Comments','','Comment Closed'); ?>--></div>
+								<div class="category-meta" style="display: none"><?php the_category(', '); ?></div>
+								<div class="meta" style="display: none"><time datetime="<?php echo the_time('Y-m-d'); ?>"><?php the_time(get_option('date_format')); ?></time><!--, <?php the_author_posts_link(); ?>, <?php comments_popup_link(__('No Comment', 'popster'), '1 Comment', '% Comments','','Comment Closed'); ?>--></div>
 								<h2 class="post-title h3"><a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a></h2>
+
+								<ul class="post-information">
+									<li>
+										<span><?php _e('By', 'popster'); ?></span> <?php the_author_posts_link(); ?>
+									</li>
+									<li><span><?php _e('in', 'popster'); ?></span> <?php the_category(', '); ?></li>
+									<li><?php the_tags('<span>tags</span> ', ', ', ''); ?></li>
+									<li><time datetime="<?php echo the_time('Y-m-d'); ?>"><span>on <?php the_time('j'); ?></span> <?php the_time('F Y'); ?></time></li>
+								</ul>
 								
 
 

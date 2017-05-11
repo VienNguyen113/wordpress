@@ -39,23 +39,21 @@ $theme_options = get_theme_mod('popster_options');
 								<div class="category-meta" style="display: none;"><?php the_category(', '); ?></div>
 								<div class="meta" style="display: none;"><time datetime="<?php echo the_time('Y-m-d'); ?>"><?php the_time(get_option('date_format')); ?></time><!--, <?php the_author_posts_link(); ?>, <?php comments_popup_link(__('No Comment', 'popster'), '1 Comment', '% Comments','','Comment Closed'); ?>--></div>
 								<h2 class="post-title h3"><a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a></h2>
-							</header> <!-- end article header -->
 
-							<ul class="post-information">
-								<li>
-									<?php $gravatar = md5(get_the_author_meta('user_email')); $default = get_template_directory_uri().'/images/avatar.png'; ?>
-									<img class="author-avatar alignleft" src="http://www.gravatar.com/avatar/<?php echo $gravatar; ?>?d=<?php echo $default; ?>&amp;s=50" style="margin-top:5px;" alt="author avatar"  />
-									<span><?php _e('Written by', 'popster'); ?></span> <?php the_author_posts_link(); ?>
-								</li>
-								<li><span><?php _e('Categories', 'popster'); ?></span> <?php the_category(', '); ?></li>
-								<li><?php the_tags('<span>Tags</span> ', ', ', ''); ?></li>
-								<li><time datetime="<?php echo the_time('Y-m-d'); ?>"><span><?php the_time('j'); ?></span> <?php the_time('F Y'); ?></time></li>
-							</ul>
+								<ul class="post-information">
+									<li>
+										<span><?php _e('By', 'popster'); ?></span> <?php the_author_posts_link(); ?>
+									</li>
+									<li><span><?php _e('in', 'popster'); ?></span> <?php the_category(', '); ?></li>
+									<li><?php the_tags('<span>tags</span> ', ', ', ''); ?></li>
+									<li><time datetime="<?php echo the_time('Y-m-d'); ?>"><span>on <?php the_time('j'); ?></span> <?php the_time('F Y'); ?></time></li>
+								</ul>
+							</header> <!-- end article header -->
 
 							<section class="post_content clearfix">
 								<?php the_excerpt(); ?>
-								<p class="read-more"><a href="<?php the_permalink() ?>"><?php _e('Read Post', 'popster'); ?></a></p>
-							</section> <!-- end article section -->							
+								<p class="read-more"><a href="<?php the_permalink() ?>"><?php _e('Read Post', 'popster'); ?></a></p>	
+							</section> <!-- end article section -->						
 						
 						</article> <!-- end article -->
 						

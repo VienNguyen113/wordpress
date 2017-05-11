@@ -353,6 +353,7 @@ class es_cls_sendmail {
 				if($name == "") {
 					$name = $to;
 				}
+				$group = $subscriber['es_email_group'];
 
 				switch($type) {
 					case 'optin':
@@ -369,7 +370,9 @@ class es_cls_sendmail {
 					case 'welcome':
 						$content_send = str_replace("###NAME###", $name, $content);
 						$content_send = str_replace("###EMAIL###", $to, $content_send);
+						$content_send = str_replace("###GROUP###", $group, $content_send);
 
+						// Making an unsubscribe link
 						$unsublink = $settings['es_c_unsublink'];
 						$unsublink = str_replace("###DBID###", $subscriber["es_email_id"], $unsublink);
 						$unsublink = str_replace("###EMAIL###", $subscriber["es_email_mail"], $unsublink);

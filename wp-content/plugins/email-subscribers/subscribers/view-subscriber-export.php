@@ -7,9 +7,17 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 $home_url = home_url('/');
 
-// Total Active Subscribers (without Unsubscribed status)
-$cnt_subscriber = 0;
-$cnt_subscriber = es_cls_dbquery::es_active_subscribers();
+// All Subscribers
+$cnt_all_subscribers = 0;
+$cnt_all_subscribers = es_cls_dbquery::es_view_subscriber_count(0);
+
+// Total Active Subscribers (Confirmed & Single Opt In)
+$cnt_active_subscribers = 0;
+$cnt_active_subscribers = es_cls_dbquery::es_active_subscribers();
+
+// Inactive Subscribers (unconfirmed & Unsubscribed)
+$cnt_inactive_subscribers = 0;
+$cnt_inactive_subscribers = es_cls_dbquery::es_inactive_subscribers();
 
 // WordPress Registered Users
 $cnt_users = 0;
@@ -51,18 +59,30 @@ $cnt_comment_author = $wpdb->get_var( "SELECT count(DISTINCT comment_author_emai
 				<tbody>
 					<tr>
 						<td><?php echo __( '1', ES_TDOMAIN ); ?></td>
-						<td><?php echo __( 'Active Subscribers List', ES_TDOMAIN ); ?></td>
-						<td><?php echo $cnt_subscriber; ?></td>
+						<td><?php echo __( 'All Subscribers', ES_TDOMAIN ); ?></td>
+						<td><?php echo $cnt_all_subscribers; ?></td>
 						<td><a onClick="javascript:_es_exportcsv('<?php echo $home_url. "?es=export"; ?>', 'view_subscriber')" href="javascript:void(0);"><?php echo __( 'Click to Export in CSV', ES_TDOMAIN ); ?></a></td>
 					</tr>
 					<tr class="alternate">
 						<td><?php echo __( '2', ES_TDOMAIN ); ?></td>
+						<td><?php echo __( 'Active Subscribers (Status: Confirmed & Single Opt In)', ES_TDOMAIN ); ?></td>
+						<td><?php echo $cnt_active_subscribers; ?></td>
+						<td><a onClick="javascript:_es_exportcsv('<?php echo $home_url. "?es=export"; ?>', 'view_subscriber')" href="javascript:void(0);"><?php echo __( 'Click to Export in CSV', ES_TDOMAIN ); ?></a></td>
+					</tr>
+					<tr>
+						<td><?php echo __( '3', ES_TDOMAIN ); ?></td>
+						<td><?php echo __( 'Inactive Subscribers (Status: Unconfirmed & Unsubscribed)', ES_TDOMAIN ); ?></td>
+						<td><?php echo $cnt_inactive_subscribers; ?></td>
+						<td><a onClick="javascript:_es_exportcsv('<?php echo $home_url. "?es=export"; ?>', 'view_subscriber')" href="javascript:void(0);"><?php echo __( 'Click to Export in CSV', ES_TDOMAIN ); ?></a></td>
+					</tr>
+					<tr class="alternate">
+						<td><?php echo __( '4', ES_TDOMAIN ); ?></td>
 						<td><?php echo __( 'WordPress Registered Users', ES_TDOMAIN ); ?></td>
 						<td><?php echo $cnt_users; ?></td>
 						<td><a onClick="javascript:_es_exportcsv('<?php echo $home_url. "?es=export"; ?>', 'registered_user')" href="javascript:void(0);"><?php echo __( 'Click to Export in CSV', ES_TDOMAIN ); ?></a></td>
 					</tr>
 					<tr>
-						<td><?php echo __( '3', ES_TDOMAIN ); ?></td>
+						<td><?php echo __( '5', ES_TDOMAIN ); ?></td>
 						<td><?php echo __( 'Commented Authors', ES_TDOMAIN ); ?></td>
 						<td><?php echo $cnt_comment_author; ?></td>
 						<td><a onClick="javascript:_es_exportcsv('<?php echo $home_url. "?es=export"; ?>', 'commentposed_user')" href="javascript:void(0);"><?php echo __( 'Click to Export in CSV', ES_TDOMAIN ); ?></a></td>

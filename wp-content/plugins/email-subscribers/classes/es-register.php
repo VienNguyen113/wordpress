@@ -457,7 +457,6 @@ class es_cls_registerhook {
 			return;
 		} else {
 			$url = wp_nonce_url(self_admin_url('update.php?action=install-plugin&plugin=' . 'icegram'), 'install-plugin_' . 'icegram');
-			$url .= '&utm_source=ig_promo&utm_medium=banner&utm_campaign=inapp_es&utm_term=es';
 			$admin_notice_text_for_ig = __( '<b>FREE</b> plugin: Quickly grow your subscribers list with beautiful and high converting optins.', ES_TDOMAIN );
 			echo '<div class="notice notice-warning"><p>'.$admin_notice_text_for_ig.'<a style="display:inline-block" class="es-admin-btn" href="'.$url.'">'.__( 'Try Icegram', ES_TDOMAIN ).'</a><a style="display:inline-block" class="es-admin-btn es-admin-btn-secondary" href="?dismiss_admin_notice=1&option_name=es_ig_notice">'.__( 'No, I don\'t need it', ES_TDOMAIN ).'</a></p></div>';
 		}
@@ -560,7 +559,7 @@ class es_widget_register extends WP_Widget {
 		?>
 
 		<div>
-			<form class="es_widget_form" es_form_id="es_widget_form">
+			<form class="es_widget_form" data-es_form_id="es_widget_form">
 				<?php if( $es_desc != "" ) { ?>
 					<div class="es_caption"><?php echo $es_desc; ?></div>
 				<?php } ?>

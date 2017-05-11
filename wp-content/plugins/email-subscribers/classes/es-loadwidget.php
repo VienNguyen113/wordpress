@@ -19,7 +19,7 @@ class es_cls_widget {
 		}
 
 		$es .= '<div>';
-		$es .= '<form class="es_shortcode_form" es_form_id="es_shortcode_form">';
+		$es .= '<form class="es_shortcode_form" data-es_form_id="es_shortcode_form">';
 
 		if( $es_desc != "" ) {
 			$es .= '<div class="es_caption">'.$es_desc.'</div>';

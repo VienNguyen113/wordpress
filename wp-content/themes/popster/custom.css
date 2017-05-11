@@ -1,0 +1,240 @@
+/******************************************************************
+CUSTOM CSS
+******************************************************************/
+body {
+	background: #ffffff;
+}
+body a, body .post-title a:hover, body .post-title a:focus, #reply-title, body #main .widgettitle,
+.post-title a:hover, .post-title-small a:hover {
+	color: #f9b433;
+}
+.post_content .read-more a, #submit {
+	background: #fac555;
+}
+.post_content .read-more a:hover, .post_content .read-more a:focus, #submit:hover {
+	background: #e4ab33 !important;
+}
+#container {
+	padding-top: 100px;
+}
+body #container > header.header {
+    min-height: 100px;
+    overflow: hidden;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    background: #ffffff;
+}
+header.header #inner-header {
+    max-width: 1350px;
+    min-height: 100px;
+    display: block;
+    margin: 0 auto;
+	padding: 0 50px;
+    box-sizing: border-box;
+}
+header.header.colored #inner-header {
+    border-bottom: 1px solid #f5f5f5;
+}
+#inner-header .nav {
+	margin: 7px 0;
+	border: 0;
+}
+#inner-header #sidebar-top a {
+	background: #fac555;
+	border-radius: 5px;
+	width: 160px;
+	line-height: 42px;
+	padding: 0;
+	color: #ffffff;
+	display: inline-block;
+	text-align: center;
+}
+#inner-header #sidebar-top {
+	margin-top: 12px !important;
+}
+#inner-header #sidebar-top a:hover, #inner-header #sidebar-top a:focus {
+	background: #e4ab33;
+	text-decoration: none;
+}
+#logo {
+    float: left;
+    margin: 0;
+}
+#sidebar-top {
+    margin: 30px 0 0;
+    float: right;
+}
+.post-title {
+	padding-top: 0;
+	border-top: 0;
+}
+body .post-information {
+    clear: both;
+    overflow: hidden;
+    color: #888;
+    font-size: 14px;
+    margin-top: -25px;
+}
+body .post-information li {
+	list-style-type: none;
+	float: left;
+	margin-right: 7px;
+}
+.post_content .read-more {
+    margin-top: 20px;
+}
+#sidebar1 .widgettitle:before, #sidebar1 .widgettitle:after {
+	display: none;
+}
+#sidebar1 {
+    padding: 20px 15px;
+    background: #f9f9f9;
+    box-sizing: border-box;
+    border-radius: 3px;
+    position: fixed;
+    top: 100px;
+    right: 50px;
+}
+#sidebar1 .widgettitle {
+	font-size: 20px;
+	text-transform: initial;
+	background: transparent;
+	text-align: center;
+	color: #a8a8a8;
+    line-height: 34px;
+    border-bottom: 1px solid #dcdada;
+	width: 90%;
+	margin: 0 auto 15px;
+}
+#sidebar1 .widgettitle > span {
+	background: transparent;
+    padding: 0;
+    margin-left: 0;
+}
+#email-subscribers-2 {
+	background: #4a4a4a;
+	border-radius: 5px;
+	padding: 10px 25px;
+	text-align: center;
+	margin-bottom: 20px;
+}
+#sidebar1 #email-subscribers-2 .widgettitle {
+    font-size: 20px;
+    text-transform: initial;
+    background: transparent;
+    text-align: center;
+    color: #cacaca;
+    line-height: 34px;
+    border-bottom: 1px solid #636161;
+}
+#sidebar1 #email-subscribers-2 form {
+    overflow: hidden;
+    margin: 29px 0 10px;
+}
+#sidebar1 #email-subscribers-2 form label {
+	display: none;
+}
+#sidebar1 #email-subscribers-2 form .es_textbox {
+	width: 65%;
+	float: left;
+}
+#sidebar1 #email-subscribers-2 form .es_textbox input {
+	width: 100%;
+	display: block;
+	line-height: 36px;
+	border: 0;
+	border-radius: 5px;
+	padding: 0 10px;
+	outline: 0;
+	box-sizing: border-box;
+}
+#sidebar1 #email-subscribers-2 form .es_button {
+	width: 30%;
+	float: right;
+	padding: 0;
+}
+#sidebar1 #email-subscribers-2 form .es_button input {
+	width: 100%;
+	display: block;
+	outline: 0;
+	box-sizing: border-box;
+	line-height: 36px;
+	font-size: 12px;
+	border: 0;
+	border-radius: 5px;
+	color: #ffffff;
+	background: #fac555;
+}
+#sidebar1 #email-subscribers-2 form .es_button input:hover {
+	background: #e4ab33;
+}
+.es_msg {
+	color: #e86262;
+}
+.es_msg span {
+	width: 100%;
+}
+.widget_recent_entries {
+	margin-bottom: 0;
+}
+.widget_recent_entries ul {
+	padding: 0 20px;
+	background: transparent;
+}
+.widget_recent_entries .widgettitle {
+	width: auto !important;
+	margin: 0 20px !important;
+	box-sizing: border-box;
+}
+.widget_recent_entries ul li {
+	padding: 12px 0;
+}
+.widget_recent_entries ul li a, .widget_recent_entries ul li span {
+	display: block;
+}
+.widget_recent_entries ul li a {
+	color: #333;
+}
+.widget_recent_entries ul li span.post-date {
+	font-size: 14px;
+	color: #888;
+}
+#sidebar1 .widget_nav_menu {
+	margin-bottom: 0;
+	position: absolute;
+	top: 100%;
+	padding: 10px;
+	width: 100%;
+	left: 0;
+	box-sizing: border-box;
+	font-size: 14px;
+}
+#sidebar1 .widget_nav_menu li a {
+    float: left;
+    margin-right: 13px;
+    color: #333;
+}
+#sidebar1 .widget_nav_menu li:last-child a {
+    margin-right: 0;
+}
+
+@media only screen and (min-width: 1350px){
+	#container {
+		border: 0;
+	}
+	#sidebar1 {
+		right: calc((100% - 1350px) / 2 + 50px);
+	}
+}
+
+@media only screen and (max-width: 1023px){
+	#sidebar1 {
+	    position: initial;
+	    margin-top: -80px;
+	}
+	#sidebar1 .widget_nav_menu {
+	    padding: 10px 50px;
+	}
+}

@@ -20,6 +20,7 @@
 		<link rel="pingback" href="<?php bloginfo('pingback_url'); ?>">
 		
 		<?php wp_head(); ?>
+		<link rel='stylesheet' href='/wp-content/themes/popster/custom.css' type='text/css' media='all' />
 		
 	</head>
 	

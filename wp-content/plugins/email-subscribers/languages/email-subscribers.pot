@@ -2,13 +2,13 @@
 # This file is distributed under the same license as the Email Subscribers & Newsletters package.
 msgid ""
 msgstr ""
-"Project-Id-Version: Email Subscribers & Newsletters 3.2.9\n"
+"Project-Id-Version: Email Subscribers & Newsletters 3.2.10\n"
 "Report-Msgid-Bugs-To: http://www.storeapps.org/support/contact-us/\n"
-"POT-Creation-Date: 2017-03-23 12:08:22+00:00\n"
+"POT-Creation-Date: 2017-05-11 05:14:33+00:00\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"PO-Revision-Date: Thu, 23 Mar 2017 17:38:22 +0530\n"
+"PO-Revision-Date: Thu, 11 May 2017 10:44:33 +0530\n"
 "Last-Translator: Ratnakar Dubey <ratnakar.dubey@storeapps.org>\n"
 "Language-Team: StoreApps <support@storeapps.org>\n"
 
@@ -64,17 +64,17 @@ msgstr ""
 msgid "<span style=\"color:#993399;\">Immediately</span>"
 msgstr ""
 
-#: classes/es-loadwidget.php:28 classes/es-register.php:568
-#: subscribers/view-subscriber-show.php:354
-#: subscribers/view-subscriber-show.php:368
+#: classes/es-loadwidget.php:28 classes/es-register.php:567
+#: subscribers/view-subscriber-show.php:361
+#: subscribers/view-subscriber-show.php:374
 msgid "Name"
 msgstr ""
 
-#: classes/es-loadwidget.php:33 classes/es-register.php:573
+#: classes/es-loadwidget.php:33 classes/es-register.php:572
 msgid "Email *"
 msgstr ""
 
-#: classes/es-loadwidget.php:38 classes/es-register.php:578
+#: classes/es-loadwidget.php:38 classes/es-register.php:577
 msgid "Subscribe"
 msgstr ""
 
@@ -102,8 +102,7 @@ msgstr ""
 msgid "Newsletters"
 msgstr ""
 
-#: classes/es-register.php:159 classes/es-register.php:160
-#: cron/cron-add.php:79
+#: classes/es-register.php:159 classes/es-register.php:160 cron/cron-add.php:79
 msgid "Cron Settings"
 msgstr ""
 
@@ -388,43 +387,43 @@ msgctxt "widget-page-enhanced-select"
 msgid "There was a problem with the request"
 msgstr ""
 
-#: classes/es-register.php:461
+#: classes/es-register.php:460
 msgid ""
 "<b>FREE</b> plugin: Quickly grow your subscribers list with beautiful and "
 "high converting optins."
 msgstr ""
 
-#: classes/es-register.php:462
+#: classes/es-register.php:461
 msgid "Try Icegram"
 msgstr ""
 
-#: classes/es-register.php:462
+#: classes/es-register.php:461
 msgid "No, I don't need it"
 msgstr ""
 
-#: classes/es-register.php:616
+#: classes/es-register.php:615
 msgid "Widget Title"
 msgstr ""
 
-#: classes/es-register.php:620
+#: classes/es-register.php:619
 msgid "Short description about subscription form"
 msgstr ""
 
-#: classes/es-register.php:624
+#: classes/es-register.php:623
 msgid "Display Name Field"
 msgstr ""
 
-#: classes/es-register.php:626 settings/settings-edit.php:290
+#: classes/es-register.php:625 settings/settings-edit.php:290
 #: settings/settings-edit.php:363 subscribers/view-subscriber-sync.php:107
 msgid "YES"
 msgstr ""
 
-#: classes/es-register.php:627 settings/settings-edit.php:291
+#: classes/es-register.php:626 settings/settings-edit.php:291
 #: settings/settings-edit.php:364 subscribers/view-subscriber-sync.php:106
 msgid "NO"
 msgstr ""
 
-#: classes/es-register.php:631
+#: classes/es-register.php:630
 msgid "Subscriber Group"
 msgstr ""
 
@@ -443,13 +442,13 @@ msgstr ""
 #: compose/compose-add.php:75 compose/compose-edit.php:86
 #: compose/compose-preview.php:28 compose/compose-show.php:66
 #: cron/cron-add.php:80 notification/notification-add.php:113
-#: notification/notification-edit.php:124
-#: notification/notification-show.php:54 roles/roles-add.php:111
-#: sendmail/sendmail.php:94 sentmail/deliverreport-show.php:61
-#: sentmail/sentmail-preview.php:28 sentmail/sentmail-show.php:97
-#: settings/settings-edit.php:198 subscribers/view-subscriber-add.php:114
+#: notification/notification-edit.php:124 notification/notification-show.php:54
+#: roles/roles-add.php:111 sendmail/sendmail.php:94
+#: sentmail/deliverreport-show.php:61 sentmail/sentmail-preview.php:28
+#: sentmail/sentmail-show.php:97 settings/settings-edit.php:198
+#: subscribers/view-subscriber-add.php:114
 #: subscribers/view-subscriber-edit.php:113
-#: subscribers/view-subscriber-export.php:30
+#: subscribers/view-subscriber-export.php:38
 #: subscribers/view-subscriber-import.php:146
 #: subscribers/view-subscriber-show.php:246
 #: subscribers/view-subscriber-sync.php:92
@@ -494,8 +493,8 @@ msgstr ""
 #: compose/compose-add.php:97 compose/compose-edit.php:108
 #: sentmail/deliverreport-show.php:73 sentmail/deliverreport-show.php:84
 #: sentmail/sentmail-show.php:113 sentmail/sentmail-show.php:126
-#: subscribers/view-subscriber-show.php:355
-#: subscribers/view-subscriber-show.php:369
+#: subscribers/view-subscriber-show.php:362
+#: subscribers/view-subscriber-show.php:375
 msgid "Status"
 msgstr ""
 
@@ -531,8 +530,7 @@ msgid "Edit Email"
 msgstr ""
 
 #: compose/compose-edit.php:85 compose/compose-show.php:65
-#: notification/notification-edit.php:123
-#: notification/notification-show.php:53
+#: notification/notification-edit.php:123 notification/notification-show.php:53
 msgid "Add New"
 msgstr ""
 
@@ -542,7 +540,7 @@ msgstr ""
 
 #: compose/compose-preview.php:40 compose/compose-show.php:101
 #: notification/notification-show.php:100
-#: subscribers/view-subscriber-show.php:399
+#: subscribers/view-subscriber-show.php:404
 msgid "Edit"
 msgstr ""
 
@@ -570,8 +568,8 @@ msgid "Actions"
 msgstr ""
 
 #: compose/compose-show.php:102 notification/notification-show.php:103
-#: subscribers/view-subscriber-show.php:278
-#: subscribers/view-subscriber-show.php:404
+#: subscribers/view-subscriber-show.php:287
+#: subscribers/view-subscriber-show.php:409
 msgid "Delete"
 msgstr ""
 
@@ -582,7 +580,7 @@ msgstr ""
 
 #: compose/compose-show.php:111 notification/notification-show.php:143
 #: sentmail/deliverreport-show.php:127 sentmail/sentmail-show.php:183
-#: subscribers/view-subscriber-show.php:427
+#: subscribers/view-subscriber-show.php:432
 msgid "No records available."
 msgstr ""
 
@@ -831,65 +829,53 @@ msgstr ""
 msgid "Select"
 msgstr ""
 
-#: notification/notification-add.php:142
-#: notification/notification-edit.php:162
+#: notification/notification-add.php:142 notification/notification-edit.php:162
 msgid "Select Notification Email Subject"
 msgstr ""
 
-#: notification/notification-add.php:143
-#: notification/notification-edit.php:163
+#: notification/notification-add.php:143 notification/notification-edit.php:163
 msgid "(Use compose menu to create new)"
 msgstr ""
 
-#: notification/notification-add.php:167
-#: notification/notification-edit.php:190
+#: notification/notification-add.php:167 notification/notification-edit.php:190
 msgid "Select Post Categories"
 msgstr ""
 
-#: notification/notification-add.php:195
-#: notification/notification-edit.php:225
+#: notification/notification-add.php:195 notification/notification-edit.php:225
 msgid "Check All"
 msgstr ""
 
-#: notification/notification-add.php:196
-#: notification/notification-edit.php:226
+#: notification/notification-add.php:196 notification/notification-edit.php:226
 msgid "Uncheck All"
 msgstr ""
 
-#: notification/notification-add.php:202
-#: notification/notification-edit.php:233
+#: notification/notification-add.php:202 notification/notification-edit.php:233
 msgid "Select your Custom Post Type"
 msgstr ""
 
-#: notification/notification-add.php:203
-#: notification/notification-edit.php:234
+#: notification/notification-add.php:203 notification/notification-edit.php:234
 msgid "(Optional)"
 msgstr ""
 
-#: notification/notification-add.php:232
-#: notification/notification-edit.php:268
+#: notification/notification-add.php:232 notification/notification-edit.php:268
 msgid "No Custom Post Types Available"
 msgstr ""
 
-#: notification/notification-add.php:239
-#: notification/notification-edit.php:275
+#: notification/notification-add.php:239 notification/notification-edit.php:275
 msgid "Select Notification Status when a new post is published"
 msgstr ""
 
-#: notification/notification-add.php:243
-#: notification/notification-edit.php:279
+#: notification/notification-add.php:243 notification/notification-edit.php:279
 #: notification/notification-show.php:130 sendmail/sendmail.php:138
 msgid "Send email immediately"
 msgstr ""
 
-#: notification/notification-add.php:244
-#: notification/notification-edit.php:280
+#: notification/notification-add.php:244 notification/notification-edit.php:280
 #: notification/notification-show.php:132
 msgid "Add to cron and send email via cron job"
 msgstr ""
 
-#: notification/notification-add.php:245
-#: notification/notification-edit.php:281
+#: notification/notification-add.php:245 notification/notification-edit.php:281
 msgid "Disable email notification"
 msgstr ""
 
@@ -910,7 +896,7 @@ msgid "Edit Notification"
 msgstr ""
 
 #: notification/notification-edit.php:131
-#: subscribers/view-subscriber-show.php:280
+#: subscribers/view-subscriber-show.php:289
 msgid "Update Subscribers Group"
 msgstr ""
 
@@ -1071,10 +1057,8 @@ msgid "Delivery Report"
 msgstr ""
 
 #: sentmail/deliverreport-show.php:71 sentmail/deliverreport-show.php:82
-#: subscribers/view-subscriber-export.php:37
 #: subscribers/view-subscriber-export.php:45
-#: subscribers/view-subscriber-show.php:352
-#: subscribers/view-subscriber-show.php:366
+#: subscribers/view-subscriber-export.php:53
 msgid "Sno"
 msgstr ""
 
@@ -1133,10 +1117,10 @@ msgid "Total"
 msgstr ""
 
 #: sentmail/sentmail-show.php:118 sentmail/sentmail-show.php:131
-#: subscribers/view-subscriber-export.php:40
 #: subscribers/view-subscriber-export.php:48
-#: subscribers/view-subscriber-show.php:358
-#: subscribers/view-subscriber-show.php:372
+#: subscribers/view-subscriber-export.php:56
+#: subscribers/view-subscriber-show.php:365
+#: subscribers/view-subscriber-show.php:378
 msgid "Action"
 msgstr ""
 
@@ -1232,8 +1216,8 @@ msgstr ""
 #: settings/settings-edit.php:237 subscribers/view-subscriber-add.php:151
 #: subscribers/view-subscriber-edit.php:150
 #: subscribers/view-subscriber-import.php:178
-#: subscribers/view-subscriber-show.php:303
-#: subscribers/view-subscriber-show.php:330
+#: subscribers/view-subscriber-show.php:312
+#: subscribers/view-subscriber-show.php:339
 msgid "Single Opt In"
 msgstr ""
 
@@ -1328,7 +1312,7 @@ msgstr ""
 msgid ""
 "Enter the content for the subscriber welcome email whenever a user's email "
 "is either confirmed (if Double Opt In) / subscribed (if Single Opt In) "
-"successfully. (Keyword: ###NAME###, ###LINK###)"
+"successfully. (Keyword: ###NAME###, ###GROUP###, ###LINK###)"
 msgstr ""
 
 #: settings/settings-edit.php:313
@@ -1472,7 +1456,7 @@ msgstr ""
 
 #: subscribers/view-subscriber-add.php:110
 #: subscribers/view-subscriber-edit.php:109
-#: subscribers/view-subscriber-export.php:27
+#: subscribers/view-subscriber-export.php:35
 #: subscribers/view-subscriber-import.php:143
 #: subscribers/view-subscriber-show.php:242
 #: subscribers/view-subscriber-sync.php:89
@@ -1481,7 +1465,7 @@ msgstr ""
 
 #: subscribers/view-subscriber-add.php:111
 #: subscribers/view-subscriber-edit.php:110
-#: subscribers/view-subscriber-export.php:28
+#: subscribers/view-subscriber-export.php:36
 #: subscribers/view-subscriber-import.php:210
 #: subscribers/view-subscriber-show.php:243
 #: subscribers/view-subscriber-sync.php:90
@@ -1498,7 +1482,7 @@ msgstr ""
 
 #: subscribers/view-subscriber-add.php:113
 #: subscribers/view-subscriber-edit.php:112
-#: subscribers/view-subscriber-export.php:29
+#: subscribers/view-subscriber-export.php:37
 #: subscribers/view-subscriber-import.php:145
 #: subscribers/view-subscriber-show.php:245
 #: subscribers/view-subscriber-sync.php:143
@@ -1520,24 +1504,24 @@ msgstr ""
 #: subscribers/view-subscriber-add.php:148
 #: subscribers/view-subscriber-edit.php:147
 #: subscribers/view-subscriber-import.php:175
-#: subscribers/view-subscriber-show.php:300
-#: subscribers/view-subscriber-show.php:327
+#: subscribers/view-subscriber-show.php:309
+#: subscribers/view-subscriber-show.php:336
 msgid "Confirmed"
 msgstr ""
 
 #: subscribers/view-subscriber-add.php:149
 #: subscribers/view-subscriber-edit.php:148
 #: subscribers/view-subscriber-import.php:176
-#: subscribers/view-subscriber-show.php:301
-#: subscribers/view-subscriber-show.php:328
+#: subscribers/view-subscriber-show.php:310
+#: subscribers/view-subscriber-show.php:337
 msgid "Unconfirmed"
 msgstr ""
 
 #: subscribers/view-subscriber-add.php:150
 #: subscribers/view-subscriber-edit.php:149
 #: subscribers/view-subscriber-import.php:177
-#: subscribers/view-subscriber-show.php:302
-#: subscribers/view-subscriber-show.php:329
+#: subscribers/view-subscriber-show.php:311
+#: subscribers/view-subscriber-show.php:338
 msgid "Unsubscribed"
 msgstr ""
 
@@ -1586,47 +1570,65 @@ msgstr ""
 msgid "Update Subscriber's Group"
 msgstr ""
 
-#: subscribers/view-subscriber-export.php:26
+#: subscribers/view-subscriber-export.php:34
 msgid "Export Email Addresses"
 msgstr ""
 
-#: subscribers/view-subscriber-export.php:38
 #: subscribers/view-subscriber-export.php:46
+#: subscribers/view-subscriber-export.php:54
 msgid "Type of List to Export"
 msgstr ""
 
-#: subscribers/view-subscriber-export.php:39
 #: subscribers/view-subscriber-export.php:47
+#: subscribers/view-subscriber-export.php:55
 msgid "Total Emails Count"
 msgstr ""
 
-#: subscribers/view-subscriber-export.php:53
+#: subscribers/view-subscriber-export.php:61
 msgid "1"
 msgstr ""
 
-#: subscribers/view-subscriber-export.php:54
-msgid "Active Subscribers List"
+#: subscribers/view-subscriber-export.php:62
+msgid "All Subscribers"
 msgstr ""
 
-#: subscribers/view-subscriber-export.php:56
-#: subscribers/view-subscriber-export.php:62
-#: subscribers/view-subscriber-export.php:68
+#: subscribers/view-subscriber-export.php:64
+#: subscribers/view-subscriber-export.php:70
+#: subscribers/view-subscriber-export.php:76
+#: subscribers/view-subscriber-export.php:82
+#: subscribers/view-subscriber-export.php:88
 msgid "Click to Export in CSV"
 msgstr ""
 
-#: subscribers/view-subscriber-export.php:59
+#: subscribers/view-subscriber-export.php:67
 msgid "2"
 msgstr ""
 
-#: subscribers/view-subscriber-export.php:60
-msgid "WordPress Registered Users"
+#: subscribers/view-subscriber-export.php:68
+msgid "Active Subscribers (Status: Confirmed & Single Opt In)"
 msgstr ""
 
-#: subscribers/view-subscriber-export.php:65
+#: subscribers/view-subscriber-export.php:73
 msgid "3"
 msgstr ""
 
-#: subscribers/view-subscriber-export.php:66
+#: subscribers/view-subscriber-export.php:74
+msgid "Inactive Subscribers (Status: Unconfirmed & Unsubscribed)"
+msgstr ""
+
+#: subscribers/view-subscriber-export.php:79
+msgid "4"
+msgstr ""
+
+#: subscribers/view-subscriber-export.php:80
+msgid "WordPress Registered Users"
+msgstr ""
+
+#: subscribers/view-subscriber-export.php:85
+msgid "5"
+msgstr ""
+
+#: subscribers/view-subscriber-export.php:86
 msgid "Commented Authors"
 msgstr ""
 
@@ -1733,88 +1735,92 @@ msgstr ""
 msgid "Please select New Status to update."
 msgstr ""
 
-#: subscribers/view-subscriber-show.php:277
+#: subscribers/view-subscriber-show.php:252
+msgid "Total Subscribers: %s"
+msgstr ""
+
+#: subscribers/view-subscriber-show.php:254
+msgid "Active Subscribers: %s"
+msgstr ""
+
+#: subscribers/view-subscriber-show.php:286
 msgid "Bulk Actions"
 msgstr ""
 
-#: subscribers/view-subscriber-show.php:279
-#: subscribers/view-subscriber-show.php:412
+#: subscribers/view-subscriber-show.php:288
+#: subscribers/view-subscriber-show.php:417
 msgid "Resend Confirmation"
 msgstr ""
 
-#: subscribers/view-subscriber-show.php:281
+#: subscribers/view-subscriber-show.php:290
 msgid "Update Subscribers Status"
 msgstr ""
 
-#: subscribers/view-subscriber-show.php:284
+#: subscribers/view-subscriber-show.php:293
 msgid "Select Group"
 msgstr ""
 
-#: subscribers/view-subscriber-show.php:299
+#: subscribers/view-subscriber-show.php:308
 msgid "Select Status"
 msgstr ""
 
-#: subscribers/view-subscriber-show.php:305
+#: subscribers/view-subscriber-show.php:314
 msgid "Apply"
 msgstr ""
 
-#: subscribers/view-subscriber-show.php:309
+#: subscribers/view-subscriber-show.php:318
 msgid "All Groups"
 msgstr ""
 
-#: subscribers/view-subscriber-show.php:326
+#: subscribers/view-subscriber-show.php:335
 msgid "All Status"
 msgstr ""
 
-#: subscribers/view-subscriber-show.php:333
-msgid "1 to 200 emails"
+#: subscribers/view-subscriber-show.php:342
+msgid "1 to 500 emails"
 msgstr ""
 
-#: subscribers/view-subscriber-show.php:334
-msgid "201 to 400"
+#: subscribers/view-subscriber-show.php:343
+msgid "501 to 1000"
 msgstr ""
 
-#: subscribers/view-subscriber-show.php:335
-msgid "401 to 600"
+#: subscribers/view-subscriber-show.php:344
+msgid "1001 to 1500"
 msgstr ""
 
-#: subscribers/view-subscriber-show.php:336
-msgid "601 to 800"
+#: subscribers/view-subscriber-show.php:345
+msgid "1501 to 2000"
 msgstr ""
 
-#: subscribers/view-subscriber-show.php:337
-msgid "801 to 1000"
+#: subscribers/view-subscriber-show.php:346
+msgid "2001 to 4000"
 msgstr ""
 
-#: subscribers/view-subscriber-show.php:338
-msgid "1001 to 2000"
+#: subscribers/view-subscriber-show.php:347
+msgid "4001 to 6000"
 msgstr ""
 
-#: subscribers/view-subscriber-show.php:339
-msgid "2001 to 5000"
+#: subscribers/view-subscriber-show.php:348
+msgid "6001 to 10000"
 msgstr ""
 
-#: subscribers/view-subscriber-show.php:340
-msgid "5001 to 10000"
-msgstr ""
-
-#: subscribers/view-subscriber-show.php:341
+#: subscribers/view-subscriber-show.php:349
 msgid "Display All"
 msgstr ""
 
-#: subscribers/view-subscriber-show.php:353
-#: subscribers/view-subscriber-show.php:367
+#: subscribers/view-subscriber-show.php:360
+#: subscribers/view-subscriber-show.php:373
 msgid "Email Address"
 msgstr ""
 
-#: subscribers/view-subscriber-show.php:356
-#: subscribers/view-subscriber-show.php:370
+#: subscribers/view-subscriber-show.php:363
+#: subscribers/view-subscriber-show.php:376
 msgid "Group"
 msgstr ""
 
-#: subscribers/view-subscriber-show.php:357
-#: subscribers/view-subscriber-show.php:371
-msgid "Signup Date<br>(YYYY-MM-DD)"
+#: subscribers/view-subscriber-show.php:364
+#: subscribers/view-subscriber-show.php:377
+msgid "Signup Date & Time<br>(Y-M-D H:I:S)"
 msgstr ""
 
 #: subscribers/view-subscriber-sync.php:36
@@ -1841,9 +1847,9 @@ msgstr ""
 msgid "Email Subscribers & Newsletters"
 msgstr ""
 
-#. #-#-#-#-#  email-subscribers.pot (Email Subscribers & Newsletters 3.2.9)  #-#-#-#-#
+#. #-#-#-#-#  email-subscribers.pot (Email Subscribers & Newsletters 3.2.10)  #-#-#-#-#
 #. Plugin URI of the plugin/theme
-#. #-#-#-#-#  email-subscribers.pot (Email Subscribers & Newsletters 3.2.9)  #-#-#-#-#
+#. #-#-#-#-#  email-subscribers.pot (Email Subscribers & Newsletters 3.2.10)  #-#-#-#-#
 #. Author URI of the plugin/theme
 msgid "http://www.icegram.com/"
 msgstr ""

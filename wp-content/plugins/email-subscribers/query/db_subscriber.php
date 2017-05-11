@@ -55,7 +55,7 @@ class es_cls_dbquery {
 			$sSql = $sSql . " and es_email_id=".$id;
 			
 		}
-		$sSql = $sSql . " order by es_email_id asc";
+		$sSql = $sSql . " order by es_email_id desc";
 		$sSql = $sSql . " LIMIT $offset, $limit";
 		$view_subscribers_details = $wpdb->get_results($sSql, ARRAY_A);
 
@@ -330,6 +330,20 @@ class es_cls_dbquery {
 		$active_subscribers_count = $wpdb->get_var( $sSql );
 
 		return $active_subscribers_count;
+
+	}
+
+	// Query to fetch inactive subscribers (status = Unconfirmed / Unsubscribed)
+	public static function es_inactive_subscribers() {
+
+		global $wpdb;
+
+		$inactive_subscribers_count = '0';
+
+		$sSql = "SELECT COUNT(*) AS `count` FROM ". $wpdb->prefix . "es_emaillist WHERE es_email_status IN ( 'Unconfirmed', 'Unsubscribed' )";
+		$inactive_subscribers_count = $wpdb->get_var( $sSql );
+
+		return $inactive_subscribers_count;
 
 	}
 

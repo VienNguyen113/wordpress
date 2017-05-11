@@ -32,7 +32,7 @@ class es_cls_default {
 			$es_c_adminmailcontant = "Hi Admin, \r\n\r\nWe have received a request to subscribe new email address to receive emails from our website. \r\n\r\nEmail: ###EMAIL### \r\nName : ###NAME### \r\n\r\nThank You\r\n".$blogname;
 			$es_c_usermailoption = "YES";
 			$es_c_usermailsubject = $blogname . " Welcome to our newsletter";
-			$es_c_usermailcontant = "Hi ###NAME###, \r\n\r\nWe have received a request to subscribe this email address to receive newsletter from our website. \r\n\r\nThank You\r\n".$blogname." \r\n\r\n No longer interested in emails from ".$blogname."?. Please <a href='###LINK###'>click here</a> to unsubscribe";
+			$es_c_usermailcontant = "Hi ###NAME###, \r\n\r\nWe have received a request to subscribe this email address to receive newsletter from our website in group ###GROUP###. \r\n\r\nThank You\r\n".$blogname." \r\n\r\n No longer interested in emails from ".$blogname."?. Please <a href='###LINK###'>click here</a> to unsubscribe";
 			$es_c_optinoption = "Double Opt In";
 			$es_c_optinsubject = $blogname . " confirm subscription";
 			$es_c_optincontent = "Hi ###NAME###, \r\n\r\nA subscription request for this email address was received. Please confirm it by <a href='###LINK###'>clicking here</a>.\r\n\r\nIf you still cannot subscribe, please click this link : \r\n ###LINK### \r\n\r\nThank You\r\n".$blogname;

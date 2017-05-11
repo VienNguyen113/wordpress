@@ -302,7 +302,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 					<tr>
 						<th scope="row">
 							<label for="elp"><?php echo __( 'Subscriber Welcome Email Content', ES_TDOMAIN ); ?>
-							<p class="description"><?php echo __( 'Enter the content for the subscriber welcome email whenever a user\'s email is either confirmed (if Double Opt In) / subscribed (if Single Opt In) successfully. (Keyword: ###NAME###, ###LINK###)', ES_TDOMAIN ); ?></p>
+							<p class="description"><?php echo __( 'Enter the content for the subscriber welcome email whenever a user\'s email is either confirmed (if Double Opt In) / subscribed (if Single Opt In) successfully. (Keyword: ###NAME###, ###GROUP###, ###LINK###)', ES_TDOMAIN ); ?></p>
 						</label>
 						</th>
 						<td><textarea size="100" id="es_c_usermailcontant" rows="10" cols="58" name="es_c_usermailcontant"><?php echo esc_html(stripslashes($form['es_c_usermailcontant'])); ?></textarea></td>

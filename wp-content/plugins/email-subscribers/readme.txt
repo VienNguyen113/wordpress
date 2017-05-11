@@ -4,8 +4,8 @@ Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_i
 Author URI: http://www.icegram.com/
 Tags: email marketing, email newsletter form, email signup, email widget, newsletter, newsletter signup, subscribe, subscription form, bulk emails, signup form, list builder, lead generation
 Requires at least: 3.4
-Tested up to: 4.7.3
-Stable tag: 3.2.9
+Tested up to: 4.7.4
+Stable tag: 3.2.10
 License: GPLv3
 License URI: http://www.gnu.org/licenses/gpl-3.0.htmlss
 
@@ -142,6 +142,7 @@ If you like Email Subscribers, please leave a [5 star](https://wordpress.org/sup
 
 * Catalan (ca) - Jordi Jorda
 * Czech (cs_CZ) - Martin & Tomas
+* German (de_DE) - [Markus Buschmann](https://profiles.wordpress.org/spiderbuschi/)
 * Spanish (es_ES) - David Bravo (bohemme)
 * French (fr_FR) - [Serge](https://profiles.wordpress.org/kalyx)
 * Hungarian (hu_HU) - Zsolt Edelényi
@@ -286,28 +287,47 @@ Use [Email Subscribers - Group Selector](https://wordpress.org/plugins/email-sub
 
 == Screenshots ==
 
-1. Front Page - Subscription box
+1. Front Page - Subscription Form
 
-2. Subscribers Management Admin page
+2. Admin page - Subscribers Management 
 
-3. Compose Mail Admin page
+3. Admin page - Compose Email 
 
-4. Notification Management Admin page
+4. Admin page - Post Notifications Management 
 
-5. Send Mail Admin page
+5. Admin page - Newsletters
 
-6. Cron Job Detailes Admin page (Schedule email)
+6. Admin page - Cron Job Settings & Details (Schedule email)
 
-7. Settings Admin page
+7. Admin page - Email Settings 
 
-8. Roles and Capabilities Management Admin page
+8. Admin page - User Roles Management 
 
-9. Sent Mails Admin page
+9. Admin page - Reports of all emails sent 
 
-10. Delivery Report Admin page
+10 Admin page - Delivery Report of emails i.e. email sent, opened, viewed status, viewed date
 
 == Changelog ==
 
+= 3.2.10 (11.05.2017) =
+
+* New: Admin can now include user subscribed group name in the Welcome Email (Email Subscribers v3.2.10+)
+* New: Show recently subscribed subscribers on top of the Subscribers page
+* New: Show submission time of subscribers on Subscribers page
+* New: Show count of total & active subscribers on Subscribers page (for admin view only)
+* New: Now you can export list of all & inactive subscribers
+* Fix: Custom attribute in the subscribe form was throwing error with HTML validator
+* Update: Increase the count of viewing the number of subscribers on Subscribers page
+* Update: Increased limit of Display All subscribers
+* Update: POT file
+* New: Translation for German (de_DE) language added (Thanks to Markus Buschmann)
+* Update: Translation for Spanish (es_ES) language updated (Thanks to David Bravo)
+* Update: Translation for Hungarian (hu_HU) language updated (Thanks to Zsolt Edelényi)
+* Update: Translation for Catalan (ca) language updated (Thanks to Jordi Jorda)
+* Update: Translation for Polish (pl_PL) language updated (Thanks to Witold)
+* Update: Translation for Lithuanian (lt_LT) language updated (Thanks to Andrius)
+* Update: Translation for Turkish (tr_TR) language updated (Thanks to Erkan ORUÇ)
+
 = 3.2.9 (23.03.2017) =
 
 * New: Use [Icegram](https://wordpress.org/plugins/icegram/) to increase Subscribers list
@@ -520,10 +540,29 @@ Use [Email Subscribers - Group Selector](https://wordpress.org/plugins/email-sub
 
 = Earlier Versions =
 
-For the changelog of earlier versions, please refer to the separate [changelog.txt](https://plugins.svn.wordpress.org/email-subscribers/trunk/changelog.txt) file
+For the changelog of earlier versions, please refer to the separate [changelog.txt](https://plugins.svn.wordpress.org/email-subscribers/trunk/changelog.txt) file.
 
 == Upgrade Notice ==
 
+= 3.2.10 (11.05.2017) =
+
+* New: Admin can now include user subscribed group name in the Welcome Email (Email Subscribers v3.2.10+)
+* New: Show recently subscribed subscribers on top of the Subscribers page
+* New: Show submission time of subscribers on Subscribers page
+* New: Show count of total & active subscribers on Subscribers page (for admin view only)
+* New: Now you can export list of all & inactive subscribers
+* Fix: Custom attribute in the subscribe form was throwing error with HTML validator
+* Update: Increase the count of viewing the number of subscribers on Subscribers page
+* Update: Increased limit of Display All subscribers
+* Update: POT file
+* New: Translation for German (de_DE) language added (Thanks to Markus Buschmann)
+* Update: Translation for Spanish (es_ES) language updated (Thanks to David Bravo)
+* Update: Translation for Hungarian (hu_HU) language updated (Thanks to Zsolt Edelényi)
+* Update: Translation for Catalan (ca) language updated (Thanks to Jordi Jorda)
+* Update: Translation for Polish (pl_PL) language updated (Thanks to Witold)
+* Update: Translation for Lithuanian (lt_LT) language updated (Thanks to Andrius)
+* Update: Translation for Turkish (tr_TR) language updated (Thanks to Erkan ORUÇ)
+
 = 3.2.9 (23.03.2017) =
 
 * New: Use [Icegram](https://wordpress.org/plugins/icegram/) to increase Subscribers list
@@ -736,4 +775,4 @@ For the changelog of earlier versions, please refer to the separate [changelog.t
 
 = Earlier Versions =
 
-For the changelog of earlier versions, please refer to the separate [changelog.txt](https://plugins.svn.wordpress.org/email-subscribers/trunk/changelog.txt) file
+For the changelog of earlier versions, please refer to the separate [changelog.txt](https://plugins.svn.wordpress.org/email-subscribers/trunk/changelog.txt) file.

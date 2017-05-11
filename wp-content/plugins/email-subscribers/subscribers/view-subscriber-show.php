@@ -237,7 +237,7 @@ if (isset($_POST['frm_es_display']) && $_POST['frm_es_display'] == 'yes') {
 ?>
 
 <div class="wrap">
-	<h2 style="margin-bottom:1em;">
+	<h2>
 		<?php echo __( 'Subscribers', ES_TDOMAIN ); ?>
 		<a class="add-new-h2" href="<?php echo ES_ADMINURL; ?>?page=es-view-subscribers&amp;ac=add"><?php echo __( 'Add New Subscriber', ES_TDOMAIN ); ?></a>
 		<a class="add-new-h2" href="<?php echo ES_ADMINURL; ?>?page=es-view-subscribers&amp;ac=import"><?php echo __( 'Import', ES_TDOMAIN ); ?></a>
@@ -245,29 +245,38 @@ if (isset($_POST['frm_es_display']) && $_POST['frm_es_display'] == 'yes') {
 		<a class="add-new-h2" href="<?php echo ES_ADMINURL; ?>?page=es-view-subscribers&amp;ac=sync"><?php echo __( 'Sync', ES_TDOMAIN ); ?></a>
 		<a class="add-new-h2" target="_blank" href="<?php echo ES_FAV; ?>"><?php echo __( 'Help', ES_TDOMAIN ); ?></a>
 	</h2>
+	<div style="text-align:right;">
+		<?php
+			$total_subscribers = es_cls_dbquery::es_view_subscriber_count(0);
+			$active_subscribers = es_cls_dbquery::es_active_subscribers();
+			echo sprintf(__( 'Total Subscribers: %s', ES_TDOMAIN ), $total_subscribers );
+			echo '<br>';
+			echo sprintf(__( 'Active Subscribers: %s', ES_TDOMAIN ), $active_subscribers );
+		?>
+	</div>
 	<div class="tool-box">
 		<form name="frm_es_display" method="post" onsubmit="return _es_bulkaction()">
 			<?php
-			$myData = array();
 			$offset = 0;
-			$limit = 200;
+			$limit = 500;
 
 			if ( $search_count == 0 ) {
-				$limit = 9999;
+				$limit = 29999;
 			}
 
 			if ( $search_count > 1 ) {
 				$offset = $search_count;
 			}
 
-			if ( $search_count == 1001 ) {
-				$limit = 1000;
-			} elseif ( $search_count == 2001 ) {
-				$limit = 3000;
-			} elseif ( $search_count == 5001 ) {
-				$limit = 5000;
+			if ( $search_count == 2001 ) {
+				$limit = 2000;
+			} elseif ( $search_count == 4001 ) {
+				$limit = 4000;
+			} elseif ( $search_count == 6001 ) {
+				$limit = 6000;
 			}
 
+			$myData = array();
 			$myData = es_cls_dbquery::es_view_subscribers_details(0, $search_sts, $offset, $limit, $search_group);
 			?>
 
@@ -330,14 +339,13 @@ if (isset($_POST['frm_es_display']) && $_POST['frm_es_display'] == 'yes') {
 						<option value="Single Opt In" <?php if($search_sts=='Single Opt In') { echo 'selected="selected"' ; } ?>><?php echo __( 'Single Opt In', ES_TDOMAIN ); ?></option>
 					</select>
 					<select name="search_count_action" id="search_count_action" onchange="return _es_search_count_action(this.value)">
-						<option value="1" <?php if($search_count=='1') { echo 'selected="selected"' ; } ?>><?php echo __( '1 to 200 emails', ES_TDOMAIN ); ?></option>
-						<option value="201" <?php if($search_count=='201') { echo 'selected="selected"' ; } ?>><?php echo __( '201 to 400', ES_TDOMAIN ); ?></option>
-						<option value="401" <?php if($search_count=='401') { echo 'selected="selected"' ; } ?>><?php echo __( '401 to 600', ES_TDOMAIN ); ?></option>
-						<option value="601" <?php if($search_count=='601') { echo 'selected="selected"' ; } ?>><?php echo __( '601 to 800', ES_TDOMAIN ); ?></option>
-						<option value="801" <?php if($search_count=='801') { echo 'selected="selected"' ; } ?>><?php echo __( '801 to 1000', ES_TDOMAIN ); ?></option>
-						<option value="1001" <?php if($search_count=='1001') { echo 'selected="selected"' ; } ?>><?php echo __( '1001 to 2000', ES_TDOMAIN ); ?></option>
-						<option value="2001" <?php if($search_count=='2001') { echo 'selected="selected"' ; } ?>><?php echo __( '2001 to 5000', ES_TDOMAIN ); ?></option>
-						<option value="5001" <?php if($search_count=='5001') { echo 'selected="selected"' ; } ?>><?php echo __( '5001 to 10000', ES_TDOMAIN ); ?></option>
+						<option value="1" <?php if($search_count=='1') { echo 'selected="selected"' ; } ?>><?php echo __( '1 to 500 emails', ES_TDOMAIN ); ?></option>
+						<option value="501" <?php if($search_count=='501') { echo 'selected="selected"' ; } ?>><?php echo __( '501 to 1000', ES_TDOMAIN ); ?></option>
+						<option value="1001" <?php if($search_count=='1001') { echo 'selected="selected"' ; } ?>><?php echo __( '1001 to 1500', ES_TDOMAIN ); ?></option>
+						<option value="1501" <?php if($search_count=='1501') { echo 'selected="selected"' ; } ?>><?php echo __( '1501 to 2000', ES_TDOMAIN ); ?></option>
+						<option value="2001" <?php if($search_count=='2001') { echo 'selected="selected"' ; } ?>><?php echo __( '2001 to 4000', ES_TDOMAIN ); ?></option>
+						<option value="4001" <?php if($search_count=='4001') { echo 'selected="selected"' ; } ?>><?php echo __( '4001 to 6000', ES_TDOMAIN ); ?></option>
+						<option value="6001" <?php if($search_count=='6001') { echo 'selected="selected"' ; } ?>><?php echo __( '6001 to 10000', ES_TDOMAIN ); ?></option>
 						<option value="0" <?php if($search_count=='0') { echo 'selected="selected"' ; } ?>><?php echo __( 'Display All', ES_TDOMAIN );?></option>
 					</select>
 				</span>
@@ -349,12 +357,11 @@ if (isset($_POST['frm_es_display']) && $_POST['frm_es_display'] == 'yes') {
 						<th scope="col" class="check-column" style="padding: 17px 2px;">
 							<input type="checkbox" name="es_checkall" id="es_checkall" onClick="_es_checkall('frm_es_display', 'chk_delete[]', this.checked);" />
 						</th>
-						<th scope="col"><?php echo __( 'Sno', ES_TDOMAIN ); ?></th>
 						<th scope="col"><?php echo __( 'Email Address', ES_TDOMAIN ); ?></th>
 						<th scope="col"><?php echo __( 'Name', ES_TDOMAIN ); ?></th>
 						<th scope="col"><?php echo __( 'Status', ES_TDOMAIN ); ?></th>
 						<th scope="col"><?php echo __( 'Group', ES_TDOMAIN ); ?></th>
-						<th scope="col"><?php echo __( 'Signup Date<br>(YYYY-MM-DD)', ES_TDOMAIN ); ?></th>
+						<th scope="col"><?php echo __( 'Signup Date & Time<br>(Y-M-D H:I:S)', ES_TDOMAIN ); ?></th>
 						<th scope="col"><?php echo __( 'Action', ES_TDOMAIN ); ?></th>
 					</tr>
 				</thead>
@@ -363,12 +370,11 @@ if (isset($_POST['frm_es_display']) && $_POST['frm_es_display'] == 'yes') {
 						<th scope="col" class="check-column" style="padding: 17px 2px;">
 							<input type="checkbox" name="es_checkall" id="es_checkall" onClick="_es_checkall('frm_es_display', 'chk_delete[]', this.checked);" />
 						</th>
-						<th scope="col"><?php echo __( 'Sno', ES_TDOMAIN ); ?></th>
 						<th scope="col"><?php echo __( 'Email Address', ES_TDOMAIN ); ?></th>
 						<th scope="col"><?php echo __( 'Name', ES_TDOMAIN ); ?></th>
 						<th scope="col"><?php echo __( 'Status', ES_TDOMAIN ); ?></th>
 						<th scope="col"><?php echo __( 'Group', ES_TDOMAIN ); ?></th>
-						<th scope="col"><?php echo __( 'Signup Date<br>(YYYY-MM-DD)', ES_TDOMAIN ); ?></th>
+						<th scope="col"><?php echo __( 'Signup Date & Time<br>(Y-M-D H:I:S)', ES_TDOMAIN ); ?></th>
 						<th scope="col"><?php echo __( 'Action', ES_TDOMAIN ); ?></th>
 					</tr>
 				</tfoot>
@@ -386,12 +392,11 @@ if (isset($_POST['frm_es_display']) && $_POST['frm_es_display'] == 'yes') {
 								?>
 								<tr class="<?php if ($i&1) { echo'alternate'; } else { echo ''; } ?>">
 									<td align="left"><input name="chk_delete[]" id="chk_delete[]" type="checkbox" value="<?php echo $data['es_email_id'] ?>" /></td>
-									<td><?php echo $i; ?></td>
 									<td><?php echo $data['es_email_mail']; ?></td>
 									<td><?php echo stripslashes($data['es_email_name']); ?></td>     
 									<td><?php echo es_cls_common::es_disp_status($data['es_email_status']); ?></td>
 									<td><?php echo stripslashes($data['es_email_group']); ?></td>
-									<td><?php echo date_format(date_create($data['es_email_created']), 'Y-m-d'); ?></td>
+									<td><?php echo get_date_from_gmt($data['es_email_created'],'Y-m-d H:i:s'); ?></td>
 									<td>
 										<div> 
 											<span class="edit">

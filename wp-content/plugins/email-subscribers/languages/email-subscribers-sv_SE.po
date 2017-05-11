@@ -1,19 +1,26 @@
-# Copyright (C) 2017 Email Subscribers & Newsletters
-# This file is distributed under the same license as the Email Subscribers & Newsletters package.
 msgid ""
 msgstr ""
-"Project-Id-Version: Email Subscribers & Newsletters 3.2.6\n"
-"Report-Msgid-Bugs-To: http://www.storeapps.org/support/contact-us/\n"
+"Project-Id-Version: Email Subscribers & Newsletters 3.2.9\n"
+"Report-Msgid-Bugs-To: http://www.icegram.com/contact/\n"
 "POT-Creation-Date: 2017-01-31 21:27+0100\n"
-"PO-Revision-Date: 2017-02-03 17:53+0100\n"
-"Last-Translator: \n"
-"Language-Team: StoreApps <support@storeapps.org>\n"
-"Language: sv_SE\n"
+"PO-Revision-Date: Tue May 09 2017 09:29:05 GMT+0530 (IST)\n"
+"Last-Translator: <>\n"
+"Language-Team: Icegram <hello@icegram.com>\n"
+"Language: Swedish\n"
+"Plural-Forms: nplurals=2; plural=n != 1\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 1.8.11\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Generator: Loco - https://localise.biz/\n"
+"X-Poedit-Basepath: .\n"
+"X-Poedit-SearchPath-0: ..\n"
+"X-Poedit-KeywordsList: _:1;gettext:1;dgettext:2;ngettext:1,2;dngettext:2,3;"
+"__:1;_e:1;_c:1;_n:1,2;_n_noop:1,2;_nc:1,2;__ngettext:1,2;__ngettext_noop:1,2;"
+"_x:1,2c;_ex:1,2c;_nx:1,2,4c;_nx_noop:1,2,3c;_n_js:1,2;_nx_js:1,2,3c;"
+"esc_attr__:1;esc_html__:1;esc_attr_e:1;esc_html_e:1;esc_attr_x:1,2c;"
+"esc_html_x:1,2c;comments_number_link:2,3;t:1;st:1;trans:1;transChoice:1,2\n"
+"X-Loco-Target-Locale: sv_SE"
 
 #: classes/es-common.php:8
 msgid "<span style=\"color:#006600;font-weight:bold;\">Confirmed</span>"
@@ -191,8 +198,8 @@ msgstr "Vill du exportera e-mailen?"
 #: classes/es-register.php:190
 msgctxt "view-subscriber-enhanced-select"
 msgid ""
-"Please select only csv file. Please check official website for csv "
-"structure.."
+"Please select only csv file. Please check official website for csv structure."
+"."
 msgstr "Välj en csv-fil. Se vår hemsida för vidare anvisningar."
 
 #: classes/es-register.php:198
@@ -217,8 +224,7 @@ msgstr "Välj prenumerationsgrupp"
 
 #: classes/es-register.php:209
 msgctxt "notification-enhanced-select"
-msgid ""
-"Please select notification mail subject. Use compose menu to create new."
+msgid "Please select notification mail subject. Use compose menu to create new."
 msgstr "Välj rubrik för nyhetsbrevet. Använd menyn för att skapa ett nytt."
 
 #: classes/es-register.php:210
@@ -481,6 +487,7 @@ msgid "Enter Content for your Mail"
 msgstr "nge mailets innehåll"
 
 #: compose/compose-add.php:92 compose/compose-edit.php:103
+#, c-format
 msgid ""
 "%s : ###NAME###, ###EMAIL###, ###DATE###, ###POSTTITLE###, ###POSTLINK###, "
 "###POSTLINK-WITHTITLE###, ###POSTLINK-ONLY###, ###POSTIMAGE###, "
@@ -662,13 +669,12 @@ msgstr ""
 
 #: cron/cron-add.php:129
 msgid ""
-"<a target=\"_blank\" href=\"http://www.icegram.com/documentation/es-what-to-"
-"do-if-hosting-doesnt-support-cron-jobs/\">Hosting does not support cron jobs?"
-"</a>"
+"<a target=\"_blank\" href=\"http://www.icegram.com/documentation/es-what-to-do-"
+"if-hosting-doesnt-support-cron-jobs/\">Hosting does not support cron jobs?</a>"
 msgstr ""
-"<a target=\"_blank\" href=\"http://www.icegram.com/documentation/es-what-to-"
-"do-if-hosting-doesnt-support-cron-jobs/\">Ditt webbhotell stöder inte cron "
-"jobs?</a>"
+"<a target=\"_blank\" href=\"http://www.icegram.com/documentation/es-what-to-do-"
+"if-hosting-doesnt-support-cron-jobs/\">Ditt webbhotell stöder inte cron jobs?"
+"</a>"
 
 #: export/export-email-address.php:33 export/export-email-address.php:37
 msgid "Unexpected url submit has been detected"
@@ -679,16 +685,15 @@ msgid "Welcome to Email Subscribers!"
 msgstr "Välkommen till Email Subscribers!"
 
 #: help/help.php:47
-msgid ""
-"Thanks for installing and we hope you will enjoy using Email Subscribers."
-msgstr ""
-"Tack för att du installerar och vi hoppas du ska uppskatta Email Subscribers"
+msgid "Thanks for installing and we hope you will enjoy using Email Subscribers."
+msgstr "Tack för att du installerar och vi hoppas du ska uppskatta Email Subscribers"
 
 #: help/help.php:51
 msgid "For more help and tips..."
 msgstr "För hjälp och tips...."
 
 #: help/help.php:66
+#, c-format
 msgid "Like Email Subscribers? Please consider %s."
 msgstr "Gillar du Email Subscribers. Överväg en donation $$."
 
@@ -705,6 +710,7 @@ msgstr "FAQ"
 #: help/help.php:147 help/help.php:150 help/help.php:153 help/help.php:156
 #: help/help.php:159 help/help.php:162 help/help.php:165 help/help.php:168
 #: help/help.php:171 help/help.php:174 help/help.php:177
+#, c-format
 msgid "%s"
 msgstr "%s"
 
@@ -788,8 +794,7 @@ msgstr "Hur planerar man Cronmail i cPanel?"
 
 #: help/help.php:171
 msgid "How to Schedule Cron Emails in Parallels Plesk?"
-msgstr ""
-"Hur planerar Cron-mail på parallela Plesk (adminpaneler hos webbhotell)"
+msgstr "Hur planerar Cron-mail på parallela Plesk (adminpaneler hos webbhotell)"
 
 #: help/help.php:174
 msgid "What to do if Hosting doesn’t support Cron Jobs?"
@@ -819,10 +824,8 @@ msgid "Please select notification status."
 msgstr "Välj notifkationsstatus"
 
 #: notification/notification-add.php:44 notification/notification-edit.php:60
-msgid ""
-"Please select notification mail subject. Use compose menu to create new."
-msgstr ""
-"Välj notifierningsmailets ämne. Använd Skapa meny för att lägga till en ny."
+msgid "Please select notification mail subject. Use compose menu to create new."
+msgstr "Välj notifierningsmailets ämne. Använd Skapa meny för att lägga till en ny."
 
 #: notification/notification-add.php:50 notification/notification-edit.php:66
 msgid "Please select post categories."
@@ -949,8 +952,7 @@ msgid "Role Updated. "
 msgstr "Rollen uppdaterat"
 
 #: roles/roles-add.php:113
-msgid ""
-"Select user roles who can access following menus. Only Admin can change this."
+msgid "Select user roles who can access following menus. Only Admin can change this."
 msgstr ""
 "Välj användarroll som kan få tillgång till följande menyer. Bara Admin kan "
 "ändra detta."
@@ -1054,14 +1056,15 @@ msgid "Recipients : 0 "
 msgstr "Mottagare: 0"
 
 #: sendmail/sendmail.php:179
+#, c-format
 msgid "Recipients : %s"
 msgstr "Mottagare: %s"
 
 #: sendmail/sendmail.php:182
 msgid ""
 "<br><br><strong>Your Recipients count is above 100.<br>We strongly recommend "
-"that you change above Mail Type to Cron and Send Mail via Cron Job.</"
-"strong><br>Click on Help for more information."
+"that you change above Mail Type to Cron and Send Mail via Cron Job."
+"</strong><br>Click on Help for more information."
 msgstr ""
 "<br><br><strong>Antalet mailmottagare är över 100. <br> Vi rekommenderar att "
 "du ändrar Mailtyp till Cron och sendre mail via CronJob. a/strongZ<br>Klicka "
@@ -1128,8 +1131,7 @@ msgid "Successfully deleted all reports except latest 10."
 msgstr "Alla rapporter utom de 10 senaste har raderats"
 
 #: sentmail/sentmail-show.php:99
-msgid ""
-"It will show reports for all Newsletters & Post Notification emails sent."
+msgid "It will show reports for all Newsletters & Post Notification emails sent."
 msgstr ""
 "Det kommer att visa rapporter för alla nyhetsbrev och notifieringar för "
 "poster som sänts med email."
@@ -1253,8 +1255,8 @@ msgid ""
 "means subscribers do not need to confirm their email address."
 msgstr ""
 "Double Opt In betyder att prenumeranterna behöver bekräfta sina e-"
-"postadresser genom att klicka på en aktiveringslänk i bekräfteslemailet. <br/"
-">Single Opt In inenbär att man inte behöver bekräfta."
+"postadresser genom att klicka på en aktiveringslänk i bekräfteslemailet. "
+"<br/>Single Opt In inenbär att man inte behöver bekräfta."
 
 #: settings/settings-edit.php:235
 msgid "Double Opt In"
@@ -1346,8 +1348,7 @@ msgstr "Välkomstmail till prenumerant"
 msgid ""
 "To send welcome email to subscriber after successful signup. This option "
 "must be set to YES."
-msgstr ""
-"För att sända välkomstmail till nya prenumeranter, så måste detta val vara JA"
+msgstr "För att sända välkomstmail till nya prenumeranter, så måste detta val vara JA"
 
 #: settings/settings-edit.php:289 settings/settings-edit.php:362
 #: subscribers/view-subscriber-sync.php:106
@@ -1453,8 +1454,7 @@ msgstr "Notifiera Admin om nya prenumeranter"
 msgid ""
 "To send admin email notifications for the new subscriber. This option must "
 "be set to YES."
-msgstr ""
-"För att få notifieringar vid nya prenumeranter måste denna sättas till JA"
+msgstr "För att få notifieringar vid nya prenumeranter måste denna sättas till JA"
 
 #: settings/settings-edit.php:369
 msgid "Admin Email Subject"
@@ -1483,8 +1483,7 @@ msgid "Sent Report Subject"
 msgstr "Sändrapport Ämne"
 
 #: settings/settings-edit.php:385
-msgid ""
-"Enter the subject for the sent email report. It will be mailed to Admin."
+msgid "Enter the subject for the sent email report. It will be mailed to Admin."
 msgstr "Ange Ämne för Sändrapporterna. Det sänds till Admin."
 
 #: settings/settings-edit.php:391
@@ -1496,8 +1495,8 @@ msgid ""
 "Enter the content for the sent mail report. It will be mailed to Admin. "
 "(Keyword: ###COUNT###, ###UNIQUE###, ###STARTTIME###, ###ENDTIME###)"
 msgstr ""
-"Ange innehållet i sändrapporten. Det kommer att sändas till Admin.  "
-"(Keyword: ###COUNT###, ###UNIQUE###, ###STARTTIME###, ###ENDTIME###)"
+"Ange innehållet i sändrapporten. Det kommer att sändas till Admin.  (Keyword:"
+" ###COUNT###, ###UNIQUE###, ###STARTTIME###, ###ENDTIME###)"
 
 #: settings/settings-edit.php:402
 msgid "Save Settings"
@@ -1516,8 +1515,7 @@ msgstr "Välj eller skapa en grupp för dessa mail."
 msgid ""
 "Error: Special characters (['^$%&*()}{@#~?><>,|=_+\\\"]) are not allowed in "
 "the group name."
-msgstr ""
-"Specialtecken  (['^$%&*()}{@#~?><>,|=_+\\\"]) är inte tillåtna i gruppnamnet"
+msgstr "Specialtecken  (['^$%&*()}{@#~?><>,|=_+\\\"]) är inte tillåtna i gruppnamnet"
 
 #: subscribers/view-subscriber-add.php:65
 msgid "Subscriber has been saved."
@@ -1695,8 +1693,7 @@ msgstr "Författarkommentarer"
 msgid ""
 "Error: Special characters (['^$%&*()}{@#~?><>,|=_+\\\"]) are not allowed in "
 "the Group name."
-msgstr ""
-"Specialtecken är ej tillåtna i gruppnamn (['^$%&*()}{@#~?><>,|=_+\\\"])"
+msgstr "Specialtecken är ej tillåtna i gruppnamn (['^$%&*()}{@#~?><>,|=_+\\\"])"
 
 #: subscribers/view-subscriber-import.php:91
 msgid "email imported."
@@ -1758,8 +1755,7 @@ msgid "Record deleted."
 msgstr "Post raderad"
 
 #: subscribers/view-subscriber-show.php:66
-msgid ""
-"To send confirmation email, please change the Opt-in option to Double Opt In."
+msgid "To send confirmation email, please change the Opt-in option to Double Opt In."
 msgstr "För att sända bekräftelsemail, ändra Opt-In till Double Opt In."
 
 #: subscribers/view-subscriber-show.php:74
@@ -1775,8 +1771,7 @@ msgid "No record was selected."
 msgstr "Inga poster har valts"
 
 #: subscribers/view-subscriber-show.php:114
-msgid ""
-"To send confirmation mail, please change the Opt-in option to Double Opt In."
+msgid "To send confirmation mail, please change the Opt-in option to Double Opt In."
 msgstr "För att sända bekräftelsemail, ändra Opt-In till Double Opt In."
 
 #: subscribers/view-subscriber-show.php:162
